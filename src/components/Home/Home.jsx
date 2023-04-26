@@ -1,0 +1,27 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Home = () => {
+  return (
+    <div className="mx-10">
+      <div className="hero min-h-screen bg-gradient-to-r from-green-400 to-blue-500">
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+            <p className="mb-5">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <Link to='/register'>
+              <button className="btn btn-primary bg-gradient-to-r from-green-500 to-blue-700 border-0">Get Started</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
